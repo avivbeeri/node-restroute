@@ -1,0 +1,23 @@
+{
+  "name": "node-restroute",
+  "version": "0.0.1",
+  "description": "Simple HTTP request/response router for simple REST applications.",
+  "main": "restroute.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/avivbeeri/node-restroute.git"
+  },
+  "keywords": [
+    "rest",
+    "router"
+  ],
+  "author": "Aviv Beeri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/avivbeeri/node-restroute/issues"
+  },
+  "homepage": "https://github.com/avivbeeri/node-restroute"
+}

@@ -18,6 +18,7 @@ Usage
 ===============
 
 RestRoute supports routes for all current HTTP/1.1 methods. To add a GET method handler looks like this:
+
     var pattern = ...
     router.get(pattern, handler);
     
@@ -83,4 +84,8 @@ This simple example demonstrates a simple use of RestRoute.
     //Use them in a server
     http.createServer(router.go).listen(8080);
 
-By navigating to http://localhost:8080 in your browser, you should see "Hello World" and if you navigate to http://localhost:8080/something you will recieve "something". But, attempting to navigate to http://localhost:8080/something/else results in "404" because of RestRoute's strict pattern matching. You could change this using the pattern `/:echo*` or `/:echo/*` depending on your needs.
+Navigate to:
+
+ * http://localhost:8080,, you should see "Hello World".
+ * http://localhost:8080/something, you will recieve "something". 
+ * But, http://localhost:8080/something/else results in "404" because of RestRoute's strict pattern matching. You could change this using the pattern `/:echo*` or `/:echo/*` depending on your needs.

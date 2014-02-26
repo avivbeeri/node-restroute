@@ -34,13 +34,13 @@ Handler Patterns
 
 The `pattern` is a simple way to handle incoming urls from requests. It supports the following formatting features.
 
- * Static text matching eg: `/` or `/downloads` or `/images/cats`
-   * This is for exact matches, so `/downloads` would not match `/downloads/sub-folder`.
- * Parameters in the url: `/:parameter` or `/testing/:parameter/data`
-   * These are made available as `request.params.parameter` for your callback function.
+ * Strict text matching eg: set your pattern to `"/"` or `"/downloads"` or `"/images/cats"`
+   * This is for exact matches, so `"/downloads"` would not match `"/downloads/sub-folder"`.
+ * Parameterized matching: `"/:parameter"` or `"/testing/:parameterNameHere/data"`
+   * These are made available as `request.params.parameterNameHere` for your callback function.
  * Wildcards for directory matching:
-   * Loose: `pattern = /downloads*` means that `pattern` would match both `/downloads` and any subdirectory below it.
-   * Strict: `pattern = /downloads/*` would only match the subdirectories, but not `/downloads`
+   * Loose: `pattern = "/downloads*"` means that `pattern` would match both `"/downloads"` and any subdirectory below it.
+   * Strict: `pattern = "/downloads/*"` would only match the subdirectories, but not `"/downloads"`
 
 
 Other Features

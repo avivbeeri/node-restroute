@@ -60,7 +60,7 @@ This simple example demonstrates a simple use of RestRoute.
 
     //Imports
     var http = require('http');
-    var router = require('./lib/restroute.js');
+    var router = require('restroute');
 
     //Handler functions
     function welcome (req, res) {
